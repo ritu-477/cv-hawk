@@ -789,6 +789,14 @@ video {
   margin-top: 50px;
 }
 
+.mb-\[\]{
+  margin-bottom: ;
+}
+
+.mb-\[40px\]{
+  margin-bottom: 40px;
+}
+
 .block{
   display: block;
 }

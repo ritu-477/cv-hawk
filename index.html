@@ -283,9 +283,16 @@
             class="absolute top-[17%] right-0 w-[165px] h-[143px]  bg-[#F36A3E] lg:blur-[110px] opacity-[50%] lg:block hidden">
         </div>
         <div class="container mx-auto px-3 max-w-[1140px]">
-            <div class="flex flex-wrap flex-row mx-[-12px]">
-                <div class="md:w-[50%] px-3 w-full flex justify-center items-center">
+            <div class="flex flex-wrap md:flex-row flex-col-reverse  mx-[-12px]">
+                <div class="md:w-[50%] px-3 w-full flex justify-center flex-col">
+                   <div class="flex justify-center">
                     <img src="./dist/images/png/we-helpimage.png" alt="helpyou" class="w-full max-w-[548px]">
+                   </div>
+                    <div class="md:hidden block mt-[40px]">
+                        <button
+                            class="font-semibold text-[16px] leading-[18.96px] text-[#FAFAFA] font-rubik rounded-[41px] max-w-[168px] min-h-[53px] bg-[#F36A3E] py-[17px] px-[38px] outline hover:text-[#F36A3E]  transition ease-in-out   hover:bg-[#FAFAFA]  duration-300 ... text-nowrap">Book
+                            a Call</button>
+                    </div>
                 </div>
                 <div class="md:w-[50%] px-3 w-full pt-[60px] lg:pt-0 flex justify-center items-center">
                     <div class="blank">
@@ -297,9 +304,11 @@
                             Once you've booked a session, a confirmation
                             email will be sent to the provided email address, containing all the
                             necessary details, including the date, time, and instructions for the session.</p>
+                      <div class="md:block hidden">
                         <button
                             class="font-semibold text-[16px] leading-[18.96px] text-[#FAFAFA] font-rubik rounded-[41px] max-w-[168px] min-h-[53px] bg-[#F36A3E] py-[17px] px-[38px] outline hover:text-[#F36A3E]  transition ease-in-out   hover:bg-[#FAFAFA]  duration-300 ... text-nowrap">Book
                             a Call</button>
+                      </div>
                     </div>
                 </div>
             </div>
