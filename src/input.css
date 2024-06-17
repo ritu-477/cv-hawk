@@ -3,9 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .menulist.show {
-    right: 0;
-} */
 
 .responsive1 .slick-slide {
     height: inherit !important;
@@ -60,7 +57,7 @@
     text-align: center;
 }
 
-/*...hweo-slider  */
+/*...hero-slider  */
 .hero-slider .slick-slide {
     height: inherit !important;
 }
@@ -129,22 +126,24 @@
 }
 
 /* .........................................accordion............................ */
-.bg-gray-100 {
-    background: #fffefe !important;
+@layer components{
+    .bg-gray-100 {
+            background: #fffefe !important;
+        }
+    
+        .border {
+            border-top: none !important;
+            border-bottom: 1px solid #e5e5e5e5;
+            border-left: none !important;
+            border-right: none !important;
+        }
+    
+        .hover\:bg-gray-100:hover {
+            --tw-bg-opacity: 1;
+            background-color: none !important;
+        }
+    
 }
-
-.border {
-    border-top: none !important;
-    border-bottom: 1px solid #e5e5e5e5;
-    border-left: none !important;
-    border-right: none !important;
-}
-
-.hover\:bg-gray-100:hover {
-    --tw-bg-opacity: 1;
-    background-color: none !important;
-}
-
 .cross span:nth-child(1) {
     transform: rotate(47deg) translateY(24px);
     transition: 300ms linear;

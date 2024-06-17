@@ -837,6 +837,10 @@ video {
   width: 100%;
 }
 
+.w-\[156px\]{
+  width: 156px;
+}
+
 .w-\[165px\]{
   width: 165px;
 }
@@ -855,14 +859,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[\]{
-  width: ;
-}
-
-.w-\[156px\]{
-  width: 156px;
 }
 
 .max-w-\[1140px\]{
@@ -1463,10 +1459,6 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .menulist.show {
-    right: 0;
-} */
-
 .responsive1 .slick-slide {
   height: inherit !important;
 }
@@ -1519,7 +1511,7 @@ video {
   text-align: center;
 }
 
-/*...hweo-slider  */
+/*...hero-slider  */
 
 .hero-slider .slick-slide {
   height: inherit !important;
@@ -1589,22 +1581,6 @@ video {
 }
 
 /* .........................................accordion............................ */
-
-.bg-gray-100 {
-  background: #fffefe !important;
-}
-
-.border {
-  border-top: none !important;
-  border-bottom: 1px solid #e5e5e5e5;
-  border-left: none !important;
-  border-right: none !important;
-}
-
-.hover\:bg-gray-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: none !important;
-}
 
 .cross span:nth-child(1) {
   transform: rotate(47deg) translateY(24px);
