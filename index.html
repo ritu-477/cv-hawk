@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="icon" href="./dist/images/png/nav-logo.png">
+    <title>cv-hawk</title>
+</head>
+
+<body>
+    <header class="flex md:h-screen flex-col relative">
+        <nav>
+            <div class="container max-w-[1140px] px-3 mx-auto relative">
+                <div class="flex justify-between items-center w-full">
+                    <a href=""><img src="./dist/images/png/nav-logo.png" alt="nav-logo"></a>
+                    <div class="flex max-lg:justify-center  items-center flex-col gap-8 max-sm:gap-5 justify-center max-lg:w-full max-lg:right-[-100%] top-0 max-lg:h-screen max-lg:top-0 duration-500
+                                                        max-lg:fixed menulist max-lg:bg-white overflow-hidden z-20"
+                        id="navbar">
+                        <ul class="flex justify-center flex-col gap-8 max-sm:gap-5 items-center ps-0 lg:flex-row">
+                            <li><a class="block lg:hidden" href=""><img src="./dist/images/png/nav-logo.png"
+                                        alt="logo"></a></li>
+                            <li><a class="font-normal text-[16px] leading-[18.96px] text-[#000000] font-rubik hover:text-[#F36A3E]"
+                                    href="#home" onclick="openNav()">Home</a></li>
+                            <li><a class="font-normal text-[16px] leading-[18.96px] text-[#000000] font-rubik hover:text-[#F36A3E]"
+                                    href="#about" onclick="openNav()">About</a></li>
+                            <li><a class="font-normal text-[16px] leading-[18.96px] text-[#000000] font-rubik hover:text-[#F36A3E]"
+                                    href="#helpyou" onclick="openNav()">We’ll help you</a></li>
+                            <li><a class="font-normal text-[16px] leading-[18.96px] text-[#000000] font-rubik hover:text-[#F36A3E]"
+                                    href="#testimonals" onclick="openNav()">Testimonials</a>
+                            </li>
+                        </ul>
+                        <ul class="sm:hidden block">
+                            <li><button
+                                    class="font-semibold text-[16px] leading-[18.96px] text-[#FAFAFA] font-rubik rounded-[41px] max-w=[174px] min-h-[53px] bg-[#F36A3E] py-[17px] px-[38px] outline hover:text-[#F36A3E]  transition ease-in-out   hover:bg-[#FAFAFA]  duration-300 ... ">Get
+                                    in Touch</button></li>
+                        </ul>
+
+                    </div>
+                    <div class="flex items-center gap-[30px]">
+                        <ul class="sm:block hidden">
+                            <li><button
+                                    class="font-semibold text-[16px] leading-[18.96px] text-[#FAFAFA] font-rubik rounded-[41px] max-w=[174px] min-h-[53px] bg-[#F36A3E] py-[17px] px-[38px] outline hover:text-[#F36A3E]  transition ease-in-out   hover:bg-[#FAFAFA]  duration-300 ... ">Get
+                                    in Touch</button></li>
+                        </ul>
+                        <div class="menuicon flex justify-between flex-col w-14 h-10 lg:hidden z-[100] relative"
+                            onclick="openNav()">
+                            <span class="h-[6px] bg-black w-full"></span>
+                            <span class="h-[6px] bg-black w-full"></span>
+                            <span class="h-[6px] bg-black w-full"></span>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </nav>
+        <div
+            class="absolute lg:w-[626px] lg:h-[115px] sm:w-[518px] sm:h-[95px] w-[278px] h-[66px] bg-[#F36A3E] lg:top-[45%] lg:left-[30%] sm:top-[45%] sm:left-[20%] top-[18%] left-[15%] lg:blur-[99px] md:blur-[85px] blur-[72px] sm:opacity-[51%] opacity-[60%]">
+        </div>
+        <div class="absolute top-[15%] start-0 md:block hidden z-[-1]"><img src="./dist/images/png/hero-cardimg1.png"
+                alt="page1" class="w-[100%] lg:max-w-[239px] md:max-w-[122px]"></div>
+        <div class="absolute top-[15%] end-[3%] md:block hidden z-[-1] lg:max-w-[183px] md:max-w-[115px]"><img
+                src="./dist/images/png/hero-caedimg2.png" alt="page2" class="w-[100%]"></div>
+        <div class="absolute lg:bottom-0 md:bottom-[-4%] start-[50px] md:block hidden z-[-1]"><img
+                src="./dist/images/png/hero-cardimg3.png" alt="page3"
+                class="w-[100%] lg:max-w-[207px] md:max-w-[185px]">
+        </div>
+        <div class="absolute lg:bottom-0 md:bottom-[-6%] lg:end-[3%] md:end-0 md:block hidden z-[-1]"><img
+                src="./dist/images/png/hero-cardimg4.png" alt="page4"
+                class="w-[100%] lg:max-w-[207px] md:max-w-[174px]"></div>
+        <div class="absolute lg:bottom-[10%] md:bottom-[40%] sm:bottom-[66%] bottom-[48%] start-0"><img
+                src="./dist/images/png/square-img.png" alt="square" class="w-[100%] lg:max-w-[66px] max-w-[28px]"></div>
+        <div class="absolute md:top-[27%] sm:top-[6%] top-[9%] start-[38%] lg:start-[35%] md:start-[29%]"><img
+                src="./dist/images/png/circle-img.png" alt="circle1"
+                class="w-[100%] sm:max-w-[42px] lg:max-w-[55.9px] max-w-[17px]">
+        </div>
+        <div class="absolute bottom-[6%] end-[45%] md:block hidden"><img src="./dist/images/png/circle-2img.png"
+                alt="circle2" class="w-[100%]"></div>
+        <div class="absolute md:top-[57%] top-[35%] rotate-[-45deg] lg:rotate-0 end-[2%] z-[-1]"><img
+                src="./dist/images/png/cutt-circle3.png" alt="circle3"
+                class="w-[100%] lg:max-w-[77px] sm:max-w-[60px] max-w-[40px]"></div>
+
+        <div class="flex md:grow items-center justify-center pt-[30px] md:pt-0" id="home">
+            <div class="container max-w-[1140px] px-3 mx-auto">
+                <div class="relative">
+                    <h1
+                        class="font-semibold md:text-[52px] sm:leading-[52px] md:leading-[61.62px] sm:text-[40px] text-[32px] leading-[41px] font-rubik text-[#000000] md:max-w-[766px] sm:max-w-[623px] max-w-[342px] flex mx-auto items-center justify-center text-center mb-[14px]">
+                        Unlock Your Potential with a Professional CV Builder</h1>
+                    <div
+                        class="absolute bottom-[-6px] lg:end-[22%] md:end-[17%] sm:end-[17%] end-[25%] md:max-w-[274px] sm:max-w-[208px] max-w-[171px] w-[100%]">
+                        <img src="./dist/images/svg/reactangle.svg" alt="reactangle1">
+                    </div>
+                </div>
+                <p
+                    class="sm:text-[16px] sm:leading-[24px] text-[14px] leading-[21px] font-normal font-rubik text-[#000000] opacity-70 sm:max-w-[565px] max-w-[343px] text-center mx-auto">
+                    Our user-friendly platform guides you through the process, allowing you to customize every section
+                    to align with your
+                    unique career goals.</p>
+                <div class="flex justify-center sm:gap-[17px] gap-[10px] pt-[40px] flex-wrap">
+                    <button
+                        class="font-semibold text-[16px] leading-[18.96px] text-[#FAFAFA] font-rubik rounded-[41px] max-w-[168px] min-h-[53px] bg-[#F36A3E] py-[17px] px-[38px] outline hover:text-[#F36A3E]  transition ease-in-out   hover:bg-[#FAFAFA]  duration-300 ... text-nowrap">Get
+                        in Touch</button>
+                    <button
+                        class="font-semibold text-[16px] leading-[18.96px] text-[#F36A3E] font-rubik rounded-[41px] max-w=[174px] min-h-[53px] bg-[#FAFAFA] py-[17px] px-[38px] outline hover:text-[#FAFAFA]  transition ease-in-out   hover:bg-[#F36A3E]  duration-300 ... text-nowrap">Watch
+                        Demo</button>
+                </div>
+                <div class="hero-slider md:hidden pt-[35px] ">
+                    <div class="blank">
+                        <img src="./dist/images/png/hero-slider.png" alt="heroslider" class="w-full">
+                    </div>
+                    <div class="blank">
+                        <img src="./dist/images/png/hero-slider.png" alt="heroslider" class="w-full">
+                    </div>
+                    <div class="blank">
+                        <img src="./dist/images/png/hero-slider.png" alt="heroslider" class="w-full">
+                    </div>
+                    <div class="blank">
+                        <img src="./dist/images/png/hero-slider.png" alt="heroslider" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="relative lg:pt-[165px] lg:pb-[160px] md:py-[120px] py-[100px] bg-[#fffefe]">
+        <div class="container mx-auto px-3 max-w-[1140px]">
+            <!-- row -->
+            <div class="flex flex-wrap flex-row mx-[-12px]">
+                <div class="lg:w-[50%] flex items-center px-3 w-full">
+                    <img src="./dist/images/gif-image.gif" alt="gif-image" class="w-full">
+                </div>
+                <div class="lg:w-[50%] px-3 w-full pt-[60px] lg:pt-0">
+                    <div class="responsive1 lg:block hidden" id="slider-box">
+                        <div
+                            class="slider-box rounded-[8px] px-[36px] pt-[27.5px] pb-[35px] bg-white shadow flex items-center flex-col w-[156px]">
+                            <div class="flex justify-center flex-col items-center">
+                                <img src="./dist/images/svg/thems1.svg" alt="theme">
+                                <p class="font-medium font-rubik text-[22px] leading-[26.7px] text-[#000000] pt-[19px]">
+                                    Themes</p>
+                            </div>
+                        </div>
+                        <div
+                            class="slider-box rounded-[8px] px-[36px] pt-[27.5px] pb-[35px] bg-white shadow-md flex items-center flex-col w-[156px]">
+                            <div class="flex justify-center flex-col items-center">
+                                <img src="./dist/images/svg/customize.svg" alt="customize">
+                                <p
+                                    class="font-medium font-rubik text-[22px] leading-[26.7px] text-[#000000]  pt-[19px]">
+                                    Customize</p>
+                            </div>
+                        </div>
+                        <div
+                            class="slider-box rounded-[8px] px-[36px] pt-[27.5px] pb-[35px] bg-white shadow flex items-center flex-col w-[156px]">
+                            <div class="flex justify-center flex-col items-center">
+                                <img src="./dist/images/svg/make-copies.svg" alt="makecopies">
+                                <p
+                                    class="font-medium font-rubik text-[22px] leading-[26.7px] text-[#000000] pt-[19px] text-nowrap">
+                                    Make copies</p>
+                            </div>
+                        </div>
+                        <div
+                            class="slider-box rounded-[8px] px-[36px] pt-[27.5px] pb-[35px] bg-white shadow flex items-center flex-col w-[156px]go">
+                            <div class="flex justify-center flex-col items-center">
+                                <img src="./dist/images/svg/thems1.svg" alt="theme">
+                                <p
+                                    class="font-medium font-rubik text-[22px] leading-[26.7px] text-[#000000]  pt-[19px]">
+                                    Themes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responsive1 lg:hidden block" id="slider-box">
+                        <div
+                            class="slider-box rounded-[8px] px-[36px] pt-[27.5px] pb-[35px] bg-white shadow flex items-center flex-col">
+                            <div class="flex justify-center flex-col items-center">
+                                <img src="./dist/images/svg/thems1.svg" alt="theme">
+                                <p class="font-medium font-rubik text-[22px] leading-[26.7px] text-[#000000] pt-[19px]">
+                                    Themes</p>
+                            </div>
+                        </div>
+                        <div
+                            class="slider-box rounded-[8px] px-[36px] pt-[27.5px] pb-[35px] bg-white shadow-md flex items-center flex-col">
+                            <div class="flex justify-center flex-col items-center">
+                                <img src="./dist/images/svg/customize.svg" alt="customize">
+                                <p
+                                    class="font-medium font-rubik text-[22px] leading-[26.7px] text-[#000000]  pt-[19px]">
+                                    Customize</p>
+                            </div>
+                        </div>
+                        <div
+                            class="slider-box rounded-[8px] px-[36px] pt-[27.5px] pb-[35px] bg-white shadow flex items-center flex-col">
+                            <div class="flex justify-center flex-col items-center">
+                                <img src="./dist/images/svg/make-copies.svg" alt="makecopies">
+                                <p
+                                    class="font-medium font-rubik text-[22px] leading-[26.7px] text-[#000000] pt-[19px] text-nowrap">
+                                    Make
+                                    copies</p>
+                            </div>
+                        </div>
+                        <div
+                            class="slider-box rounded-[8px] px-[36px] pt-[27.5px] pb-[35px] bg-white shadow flex items-center flex-col">
+                            <div class="flex justify-center flex-col items-center">
+                                <img src="./dist/images/svg/thems1.svg" alt="theme">
+                                <p class="font-medium font-rubik text-[22px] leading-[26.7px] text-[#000000] pt-[19px]">
+                                    Themes</p>
+                            </div>
+                        </div>
+                        <div
+                            class="slider-box rounded-[8px] px-[36px] pt-[27.5px] pb-[35px] bg-white shadow flex items-center flex-col">
+                            <div class="flex justify-center flex-col items-center">
+                                <img src="./dist/images/svg/make-copies.svg" alt="makecopies">
+                                <p
+                                    class="font-medium font-rubik text-[22px] leading-[26.7px] text-[#000000] pt-[19px] text-nowrap">
+                                    Make
+                                    copies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p
+                        class="font-rubik font-normal text-[16px] leading-[24.69px] text-[#000000] opacity-80 lg:max-w-[499px] md:max-w-[755px] pt-[40px] ps-[18px]">
+                        Theme's robust features allow you to showcase your skills, accomplishments, and experiences in a
+                        captivating way. From
+                        customizing the layout to selecting the perfect color scheme, every detail can be tailored to
+                        match your style and
+                        industry.</p>
+                </div>
+            </div>
+    </section>
+    <!-- section-your-stantout -cv -->
+    <section class="bg-[#f9f9f9] relative lg:py-[80px] sm:py-[65px] py-[40px]">
+        <div class="container mx-auto px-3 max-w-[1140px]">
+            <div class="absolute lg:top-[11%]  md::top-[16%] left-[4%] md:block hidden">
+                <img src="./dist/images/png/circle-img2.png" alt="circle4" class="lg:max-w-[64px] sm:max-w-[40px]">
+            </div>
+            <div
+                class="absolute lg:top-[14%] lg:right-[5%] md:top-[6%] md:right-[2%] md:block hidden md:rotate-[12deg] lg:rotate-0">
+                <img src="./dist/images/png/square2.png" alt="square2" class="lg:max-w-[61px] md:max-w-[31px]">
+            </div>
+            <div
+                class="absolute lg:[4%] lg:bottom-[16%] md:bottom-[9%] right-[50%] md:rotate-[-45deg] lg:rotate-0 md:block hidden">
+                <img src="./dist/images/png/cutt-circle4.png" alt="cuttcircle4" class="lg:max-w-[76px] sm:max-w-[78px]">
+            </div>
+
+            <div class="flex flex-wrap flex-row mx-[-12px]">
+                <div class="md:w-[50%] px-3 w-full flex justify-center items-center">
+                    <div class="blank">
+                        <div class="relative">
+                            <h2
+                                class="font-rubik lg:text-[40px] md:text-[30px] text-[28px]  text-[#000000] lg:leading-[47.4px] md:leading-[39px] leading-[36.4px] font-medium">
+                                Powerful Tools to Create <span class="text-[#f36a3e]">Your Standout CV</span></h2>
+                            <div class="absolute md:block hidden">
+                                <img src="./dist/images/svg/rectangle2.svg" alt="rectangle2">
+                            </div>
+                        </div>
+                        <p
+                            class="font-rubik font-normal text-[16px] leading-[24.96px] text-[#000000] opacity-80 max-w-[525px] pt-[24px]">
+                            Customize your CV to reflect your <span class="font-semibold">unique personality</span> and
+                            professional brand.
+                            Choose from a wide range of <span class="font-semibold">professionally designed</span>
+                            templates and layouts, allowing you to find the <span class="font-semibold">perfect
+                                style</span> that aligns with
+                            your industry and career goals.</p>
+                    </div>
+                </div>
+                <div class="md:w-[50%] pt-[40px] md:pt-0 px-3 w-full flex justify-center">
+                    <img src="./dist/images/png/standout-cv.png" alt="standout">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section we help you -->
+    <section class="relative bg-[#fffefe] lg:py-[160px] sm:py-[120px] py-[100px]" id="helpyou">
+        <div
+            class="absolute bottom-0 left-0 w-[165px] h-[143px]  bg-[#F36A3E] lg:blur-[110px] opacity-[50%] lg:block hidden">
+        </div>
+        <div
+            class="absolute top-[17%] right-0 w-[165px] h-[143px]  bg-[#F36A3E] lg:blur-[110px] opacity-[50%] lg:block hidden">
+        </div>
+        <div class="container mx-auto px-3 max-w-[1140px]">
+            <div class="flex flex-wrap flex-row mx-[-12px]">
+                <div class="md:w-[50%] px-3 w-full flex justify-center items-center">
+                    <img src="./dist/images/png/we-helpimage.png" alt="helpyou" class="w-full max-w-[548px]">
+                </div>
+                <div class="md:w-[50%] px-3 w-full pt-[60px] lg:pt-0 flex justify-center items-center">
+                    <div class="blank">
+                        <h2
+                            class="font-rubik lg:text-[40px] md:text-[30px] text-[28px] text-[#000000] lg:leading-[47.4px] md:leading-[39px] leading-[36.4px] font-medium pb-[16px]">
+                            We’ll help you</h2>
+                        <p
+                            class="max-w-[556px] font-normal text-[16px] leading-[24px] pb-[40px] text-[#000000] opacity-80">
+                            Once you've booked a session, a confirmation
+                            email will be sent to the provided email address, containing all the
+                            necessary details, including the date, time, and instructions for the session.</p>
+                        <button
+                            class="font-semibold text-[16px] leading-[18.96px] text-[#FAFAFA] font-rubik rounded-[41px] max-w-[168px] min-h-[53px] bg-[#F36A3E] py-[17px] px-[38px] outline hover:text-[#F36A3E]  transition ease-in-out   hover:bg-[#FAFAFA]  duration-300 ... text-nowrap">Book
+                            a Call</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section Professionally designed-->
+    <section class="bg-[#f9f9f9] relative lg:py-[120px] sm:py-[80px] py-[40px]">
+        <div
+            class="absolute bottom-[20%] left-[60%] w-[165px] h-[143px]  bg-[#F36A3E] lg:blur-[110px] opacity-[50%] lg:block hidden">
+        </div>
+        <div class="container mx-auto px-3 max-w-[1140px]">
+            <div class="flex flex-wrap flex-row mx-[-12px]">
+                <div class="md:w-[58.33%] px-3 w-full flex items-center justify-center">
+                    <div class="blank">
+                        <h2
+                            class="text-[28px] leading-[36px] md:text-[30px] md:leading-[35px] lg:text-[40px] lg:leading-[47.7px] font-medium font-rubik text-[#000000] lg:max-w-[558px] md:max-w-[403px] max-w-[353px]">
+                            20+ <span class="text-[#f36a3e]">Professionally designed</span> resume sections</h2>
+                        <p
+                            class="lg:max-w-[556px] md:max-w-[352px] max-w-[319px] sm:pb-[24px] pb-[30px] pt-[16px] text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] font-rubik opacity-70 font-normal text-[#000000]">
+                            Express your professional history without limitations or
+                            worry about how your resume looks</p>
+                        <div class="flex items-center gap-[9px] pb-[16px]">
+                            <img src="./dist/images/svg/click-svg.svg" alt="click">
+                            <p
+                                class="text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] font-normal font-rubik text-[#000000] opacity-90 lg:max-w-[556px] md:max-w-[403px] max-w-[349px]">
+                                Professional sections like<span class="text-[#000000] font-semibold"> Experience,
+                                    Skills, Summary</span class="text-[#000000] font-semibold"> and <span
+                                    class="text-[#000000] font-semibold">Education</span></p>
+                        </div>
+                        <div class="flex items-center gap-[9px] pb-[16px]">
+                            <img src="./dist/images/svg/click-svg.svg" alt="click">
+                            <p
+                                class="text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] font-normal font-rubik text-[#000000] opacity-90 lg:max-w-[556px] md:max-w-[352px] max-w-[319px] lg:text-nowrap">
+                                Professional sections like <span class="text-[#000000] font-semibold">Strengths, Quotes,
+                                    Books, Interests</span class="text-[#000000] font-semibold"> and <span
+                                    class="text-[#000000] font-semibold">My Time</span></p>
+                        </div>
+                        <div class="flex items-center gap-[9px] md:pb-[40px]">
+                            <img src="./dist/images/svg/click-svg.svg" alt="click">
+                            <p
+                                class="text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] font-normal font-rubik text-[#000000] opacity-90 lg:max-w-[556px] md:max-w-[352px] max-w-[319px]">
+                                Other sections like<span class="text-[#000000] font-semibold"> Certifications, Awards,
+                                    Achievements, Language</span> and <span
+                                    class="text-[#000000] font-semibold">Reference</span></p>
+                        </div>
+                        <button
+                            class="font-semibold text-[16px] leading-[18.96px] text-[#FAFAFA] font-rubik rounded-[41px] max-w-[168px] min-h-[53px] bg-[#F36A3E] py-[17px] px-[38px] outline hover:text-[#F36A3E]  transition ease-in-out   hover:bg-[#FAFAFA]  duration-300 ... text-nowrap md:block hidden">Get
+                            Started</button>
+                    </div>
+                </div>
+                <div class="md:w-[41.66%] px-3 w-full pt-[40px] md:pt-0 flex justify-center">
+                    <div class="blank">
+                        <img src="./dist/images/png/skills-image.png" alt="skills"
+                            class="w-full max-w-[509px] z-10 relative">
+                        <div class="md:hidden block pt-[33px]">
+                            <button
+                                class="font-semibold text-[16px] leading-[18.96px] text-[#FAFAFA] font-rubik rounded-[41px] max-w-[168px] min-h-[53px] bg-[#F36A3E] py-[17px] px-[38px] outline hover:text-[#F36A3E]  transition ease-in-out   hover:bg-[#FAFAFA]  duration-300 ... text-nowrap">Get
+                                Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- resume-applying -->
+    <section class="relative bg-[#fffefe] lg:py-[160px] sm:py-[120px] py-[100px]" id="about">
+        <div
+            class="absolute top-[37%] right-0 w-[165px] h-[143px]  bg-[#F36A3E] lg:blur-[110px] opacity-[50%] lg:block hidden">
+        </div>
+        <div
+            class="absolute bottom-[-13%] left-0 w-[165px] h-[143px]  bg-[#F36A3E] lg:blur-[110px] opacity-[50%] lg:block hidden">
+        </div>
+        <div class="container mx-auto px-3 max-w-[1140px]">
+            <div class="flex flex-wrap md:flex-row flex-col-reverse  mx-[-12px] justify-between">
+                <div
+                    class="md:w-[41.66%] px-3 w-full flex justify-center lg:items-start items-center pt-[43px] md:pt-0">
+                    <img src="./dist/images/png/resume-image.png" alt="resume" class="w-full max-w-[465px]">
+                </div>
+                <div class="md:w-[50%] px-3 w-full flex lg:justify-end justify-center items-center">
+                    <div class="blank">
+                        <div class="relative">
+                            <h2
+                                class="font-rubik lg:text-[40px] md:text-[30px] text-[28px]  text-[#000000] lg:leading-[47.4px] md:leading-[39px] leading-[36.4px] font-medium max-w-[353px] md:max-w-[384px] lg:max-w-[558px]">
+                                Resume trailoring based on the <span class="text-[#f36a3e]">job you’re
+                                    applying</span>for </h2>
+                            <div class="absolute xl:block hidden left-[15%]">
+                                <img src="./dist/images/svg/reactangle-resume.svg" alt="rectangleresume">
+                            </div>
+                        </div>
+                        <p
+                            class="lg:max-w-[556px] md:max-w-[352px] max-w-[319px] sm:pb-[24px] pb-[30px] pt-[16px] text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] font-rubik opacity-70 font-normal text-[#000000]">
+                            Quickly ensure that your resume covers key skills and experience by pasting the job ad
+                            you’re applying for</p>
+                        <div class="flex items-center gap-[9px] pb-[16px]">
+                            <img src="./dist/images/svg/click-svg.svg" alt="click">
+                            <p
+                                class="text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] font-normal font-rubik text-[#000000] opacity-90 lg:max-w-[556px] md:max-w-[403px] max-w-[349px]">
+                                Skills and experience analysis</p>
+                        </div>
+                        <div class="flex gap-[9px] pb-[16px]">
+                            <img src="./dist/images/svg/click-svg.svg" alt="click">
+                            <p
+                                class="text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] font-normal font-rubik text-[#000000] opacity-90 lg:max-w-[556px] md:max-w-[352px] max-w-[319px] lg:text-nowrap">
+                                Actionable Checklist of what else to add to your resume</p>
+                        </div>
+                        <div class="flex items-center gap-[9px] md:pb-[40px]">
+                            <img src="./dist/images/svg/click-svg.svg" alt="click">
+                            <p
+                                class="text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] font-normal font-rubik text-[#000000] opacity-90 lg:max-w-[556px] md:max-w-[352px] max-w-[319px]">
+                                Instant comparison between your resume and the job posting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider-section -->
+    <section class="bg-[#f9f9f9] lg:py-[80px] md:py-[60px] py-[40px] z-10 relative" id="testimonals">
+        <div class="container mx-auto px-3 max-w-[1140px]">
+            <div class="relative">
+                <div class="absolute lg:left-[32%] md:left-[59%] top-[-55%] md:block hidden"><img
+                        src="./dist/images/svg/qustion-markicon.svg" alt="qustionmark"></div>
+                <h2
+                    class="font-rubik lg:text-[40px] md:text-[30px] text-[28px]  text-[#010101] lg:leading-[47.4px] md:leading-[42px] leading-[36.4px] font-medium text-center">
+                    What our Clients Say</h2>
+            </div>
+            <div class="responsive-2">
+                <div class="container mx-auto px-3 max-w-[1140px]">
+                    <div
+                        class="flex flex-wrap mx-[-12px] xl:mt-[45px] md:[40px] mt-[30px] md:justify-between justify-center">
+                        <div
+                            class="xl:w-[33.33%] md:w-[50%] px-3 w-full xl:mt-[26px]  justify-center xl:justify-start md:flex hidden">
+                            <div class="blank">
+                                <div
+                                    class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] w-[357px] bg-white drop-shadow-lg flex relative">
+                                    <p
+                                        class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[321px]">
+                                        Sit urna
+                                        ornare sed quam molestie sit placerat convallis. Ac condimentum mollis malesuada
+                                        placerat in
+                                        placerat</p>
+                                    <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                            src="./dist/images/svg/vector1.svg" alt="vector1"></div>
+                                </div>
+                                <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                        src="./dist/images/svg/slider1svg.svg" alt="slider1">
+                                    <div>
+                                        <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">
+                                            Darrell Steward</p>
+                                        <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="xl:w-[33.33%] md:w-[50%] px-3 w-full  justify-start mt-[26px] xl:mt-0 md:flex hidden">
+                            <div class="blank">
+                                <div
+                                    class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] w-[357px] bg-white drop-shadow-lg flex relative">
+                                    <p
+                                        class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[321px]">
+                                        Magna ipsum
+                                        erat magna nulla auctor. Phasellus consectetur aliquam vel at non faucibus
+                                        viverra.</p>
+                                    <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                            src="./dist/images/svg/vector1.svg" alt="vector1">
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                        src="./dist/images/svg/slider2svg.svg" alt="slider2">
+                                    <div>
+                                        <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">
+                                            Savannah Nguyen</p>
+                                        <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="xl:w-[33.33%] md:w-[50%] px-3 w-full md:hidden flex justify-center  items-center pb-[30px]">
+                            <div class="blank">
+                                <div
+                                    class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] max-w-[323px] bg-white drop-shadow-lg flex relative">
+                                    <p
+                                        class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[291px]">
+                                        Magna ipsum
+                                        erat magna nulla auctor. Phasellus consectetur aliquam vel at non faucibus
+                                        viverra.</p>
+                                    <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                            src="./dist/images/svg/vector1.svg" alt="vector1">
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                        src="./dist/images/svg/slider2svg.svg" alt="slider2">
+                                    <div>
+                                        <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">
+                                            Savannah Nguyen</p>
+                                        <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xl:w-[33.33%] md:w-[50%] px-3 w-full mt-[26px] xl:block hidden">
+                            <div
+                                class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] w-[357px] bg-white drop-shadow-lg flex relative">
+                                <p
+                                    class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[321px]">
+                                    Morbi leo ullamcorper in et viverra. Neque elit scelerisque purus praesent nulla ut
+                                    a id.</p>
+                                <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                        src="./dist/images/svg/vector1.svg" alt="vector1">
+                                </div>
+                            </div>
+                            <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                    src="./dist/images/svg/slider3svg.svg" alt="slider3">
+                                <div>
+                                    <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">Esther
+                                        Howard</p>
+                                    <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-[50%] px-3 w-full mt-[34px] sm:justify-end md:flex hidden">
+                            <div class="blank">
+                                <div
+                                    class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] max-w-[357px] bg-white drop-shadow-lg flex relative">
+                                    <p
+                                        class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[321px]">
+                                        Urna ac eu cras pellentesque scelerisque et. Vestibulum sed felis leo leo massa
+                                        elementum sit
+                                        praesent eu.</p>
+                                    <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                            src="./dist/images/svg/vector1.svg" alt="vector1">
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                        src="./dist/images/svg/slider4svg.svg" alt="slider4">
+                                    <div>
+                                        <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">
+                                            Jenny Wilson</p>
+                                        <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="xl:w-[33.33%] md:w-[50%] px-3 w-full md:justify-end mt-[50px] md:flex hidden xl:me-[120px]">
+                            <div class="blank">
+                                <div
+                                    class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] w-[357px] bg-white drop-shadow-lg flex relative">
+                                    <p
+                                        class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[321px]">
+                                        Nibh in commodo faucibus tincidunt. Adipiscing lobortis est elit neque sem
+                                        scelerisque tellus magna
+                                        urna.</p>
+                                    <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                            src="./dist/images/svg/vector1.svg" alt="vector1">
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                        src="./dist/images/svg/slider5svg.svg" alt="slider5">
+                                    <div>
+                                        <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">Wade
+                                            Warren</p>
+                                        <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mx-auto px-3 max-w-[1140px]">
+                    <div
+                        class="flex flex-wrap mx-[-12px] xl:mt-[45px] md:[40px] mt-[30px] md:justify-between justify-center">
+                        <div
+                            class="xl:w-[33.33%] md:w-[50%] px-3 w-full xl:mt-[26px]  justify-center xl:justify-start md:flex hidden">
+                            <div class="blank">
+                                <div
+                                    class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] w-[357px] bg-white drop-shadow-lg flex relative">
+                                    <p
+                                        class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[321px]">
+                                        Sit urna
+                                        ornare sed quam molestie sit placerat convallis. Ac condimentum mollis malesuada
+                                        placerat in
+                                        placerat</p>
+                                    <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                            src="./dist/images/svg/vector1.svg" alt="vector1"></div>
+                                </div>
+                                <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                        src="./dist/images/svg/slider1svg.svg" alt="slider1">
+                                    <div>
+                                        <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">
+                                            Darrell Steward</p>
+                                        <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="xl:w-[33.33%] md:w-[50%] px-3 w-full  justify-start mt-[26px] xl:mt-0 md:flex hidden">
+                            <div class="blank">
+                                <div
+                                    class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] w-[357px] bg-white drop-shadow-lg flex relative">
+                                    <p
+                                        class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[321px]">
+                                        Magna ipsum
+                                        erat magna nulla auctor. Phasellus consectetur aliquam vel at non faucibus
+                                        viverra.</p>
+                                    <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                            src="./dist/images/svg/vector1.svg" alt="vector1">
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                        src="./dist/images/svg/slider2svg.svg" alt="slider2">
+                                    <div>
+                                        <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">
+                                            Savannah Nguyen</p>
+                                        <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xl:w-[33.33%] md:w-[50%] px-3 w-full md:hidden flex justify-center">
+                            <div class="blank">
+                                <div
+                                    class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] max-w-[323px] bg-white drop-shadow-lg flex relative">
+                                    <p
+                                        class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[321px]">
+                                        Nibh in commodo faucibus tincidunt. Adipiscing lobortis est elit neque sem
+                                        scelerisque tellus
+                                        magna
+                                        urna.</p>
+                                    <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                            src="./dist/images/svg/vector1.svg" alt="vector1">
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                        src="./dist/images/svg/slider5svg.svg" alt="slider5">
+                                    <div>
+                                        <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">Wade
+                                            Warren</p>
+                                        <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xl:w-[33.33%] md:w-[50%] px-3 w-full mt-[26px] xl:block hidden">
+                            <div
+                                class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] w-[357px] bg-white drop-shadow-lg flex relative">
+                                <p
+                                    class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[321px]">
+                                    Morbi leo ullamcorper in et viverra. Neque elit scelerisque purus praesent nulla ut
+                                    a id.</p>
+                                <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                        src="./dist/images/svg/vector1.svg" alt="vector1">
+                                </div>
+                            </div>
+                            <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                    src="./dist/images/svg/slider3svg.svg" alt="slider3">
+                                <div>
+                                    <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">Esther
+                                        Howard</p>
+                                    <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-[50%] px-3 w-full mt-[34px] sm:justify-end md:flex hidden">
+                            <div class="blank">
+                                <div
+                                    class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] max-w-[357px] bg-white drop-shadow-lg flex relative">
+                                    <p
+                                        class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[321px]">
+                                        Urna ac eu cras pellentesque scelerisque et. Vestibulum sed felis leo leo massa
+                                        elementum sit
+                                        praesent eu.</p>
+                                    <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                            src="./dist/images/svg/vector1.svg" alt="vector1">
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                        src="./dist/images/svg/slider4svg.svg" alt="slider4">
+                                    <div>
+                                        <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">
+                                            Jenny Wilson</p>
+                                        <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="xl:w-[33.33%] md:w-[50%] px-3 w-full md:justify-end mt-[50px] md:flex hidden xl:me-[120px]">
+                            <div class="blank">
+                                <div
+                                    class="slider-box1 rounded-[10px] px-[18px] pt-[15px] pb-[14px] w-[357px] bg-white drop-shadow-lg flex relative">
+                                    <p
+                                        class="font-normal font-rubik text-[16px] leading-[24.69px] text-[#000000] opacity-80 max-w-[321px]">
+                                        Nibh in commodo faucibus tincidunt. Adipiscing lobortis est elit neque sem
+                                        scelerisque tellus
+                                        magna
+                                        urna.</p>
+                                    <div class="absolute bottom-[-17%] left-[10%] z-[-1]"><img
+                                            src="./dist/images/svg/vector1.svg" alt="vector1">
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 items-center mt-[40px] ms-[25px]"><img
+                                        src="./dist/images/svg/slider5svg.svg" alt="slider5">
+                                    <div>
+                                        <p class="font-rubik text-[20px] font-normal leading-[23px] text-[#010101]">Wade
+                                            Warren</p>
+                                        <img src="./dist/images/svg/star-svg.svg" alt="star1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="preBtn absolute md:top-[50%] xl:left-[105px] lg:left-[100px] md:left-[10px] top-[88%] left-[36%] sm:left-[43%] arrow flex items-center justify-center">
+                <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.54936 0.779599L0.343011 10.224C0.181315 10.3899 0.0908203 10.6124 0.0908203 10.8441C0.0908203 11.0757 0.181315 11.2982 0.343011 11.4641L9.54936 20.9121C9.62469 20.9894 9.71474 21.0509 9.81421 21.0929C9.91369 21.1349 10.0206 21.1565 10.1285 21.1565C10.2365 21.1565 10.3434 21.1349 10.4429 21.0929C10.5423 21.0509 10.6324 20.9894 10.7077 20.9121C10.8627 20.7534 10.9494 20.5404 10.9494 20.3187C10.9494 20.0969 10.8627 19.8839 10.7077 19.7253L2.05033 10.8441L10.7077 1.96459C10.8621 1.80603 10.9486 1.59343 10.9486 1.3721C10.9486 1.15076 10.8621 0.938165 10.7077 0.779599C10.6324 0.70224 10.5423 0.640754 10.4429 0.59877C10.3434 0.556786 10.2365 0.535156 10.1285 0.535156C10.0206 0.535156 9.91369 0.556786 9.81421 0.59877C9.71474 0.640754 9.62469 0.70224 9.54936 0.779599Z"
+                        fill="#F36A3E" />
+                </svg>
+            </div>
+            <div
+                class="nextBtn absolute md:top-[50%] xl:right-[105px] lg:right-[100px] md:right-[10px] top-[88%] right-[37%] sm:right-[42%] arrow flex items-center justify-center">
+                <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.83247 0.779599L11.0388 10.224C11.2005 10.3899 11.291 10.6124 11.291 10.8441C11.291 11.0757 11.2005 11.2982 11.0388 11.4641L1.83247 20.9121C1.75715 20.9894 1.6671 21.0509 1.56762 21.0929C1.46815 21.1349 1.36127 21.1565 1.2533 21.1565C1.14533 21.1565 1.03845 21.1349 0.938977 21.0929C0.839503 21.0509 0.749449 20.9894 0.674128 20.9121C0.519169 20.7534 0.432416 20.5404 0.432416 20.3187C0.432416 20.0969 0.519169 19.8839 0.674128 19.7253L9.33151 10.8441L0.674128 1.96459C0.5197 1.80603 0.433283 1.59343 0.433283 1.3721C0.433283 1.15076 0.5197 0.938165 0.674128 0.779599C0.749449 0.70224 0.839503 0.640754 0.938977 0.59877C1.03845 0.556786 1.14533 0.535156 1.2533 0.535156C1.36127 0.535156 1.46815 0.556786 1.56762 0.59877C1.6671 0.640754 1.75715 0.70224 1.83247 0.779599Z"
+                        fill="#F36A3E" />
+                </svg>
+            </div>
+        </div>
+
+    </section>
+    <!-- accordion-section -->
+    <section class="lg:pt-[160px] sm:pt-[120px] pt-[100px] bg-[#fffefe]">
+        <div class="container mx-auto px-3 max-w-[1140px]">
+            <h2
+                class="font-rubik lg:text-[40px] md:text-[30px] text-[28px]  text-[#010101] lg:leading-[47.4px] md:leading-[42px] leading-[36.4px] font-medium text-center">
+                Frequently Asked Questions</h2>
+            <div class="max-w-[856px] mx-auto lg:pt-[50px] sm:pt-[60px] pt-[30px]" id="accordion-collapse"
+                data-accordion="collapse">
+                <div id="accordion-flush" data-accordion="collapse"
+                    data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                    data-inactive-classes="text-gray-500 dark:text-gray-400">
+                    <h2 id="accordion-flush-heading-2">
+                        <button type="button"
+                            class="flex justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+                            aria-controls="accordion-flush-body-2">
+                            <span
+                                class="font-rubik font-normal lg:text-[24px] sm:text-[20px] text-[16px] sm:leading-[28.44px] leading-[24px] text-[#010101]">Q1.
+                                How
+                                does the CVhawk work??</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p
+                                class="text-[#000000] opacity-80 max-w-[786px] text-[16px] leading-[24.69px] font-normal font-rubik">
+                                Absolutely! We
+                                understand that your CV is a dynamic document that may require updates and modifications
+                                over time. Once
+                                you've saved your CV using our CVhawk, you can easily edit and make changes whenever
+                                needed.</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-3">
+                        <button type="button"
+                            class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
+                            aria-controls="accordion-flush-body-3">
+                            <span
+                                class="font-rubik font-normal lg:text-[24px] sm:text-[20px] text-[16px] sm:leading-[28.44px] leading-[24px] text-[#010101]">Q2.
+                                Is the
+                                CVhawk completely free to use?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p
+                                class="text-[#000000] opacity-80 max-w-[786px] text-[16px] leading-[24.69px] font-normal font-rubik">
+                                Absolutely! We
+                                understand that your CV is a dynamic document that may require updates and modifications
+                                over time. Once
+                                you've saved your CV using our CVhawk, you can easily edit and make changes whenever
+                                needed.</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-1">
+                        <button type="button"
+                            class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b   dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
+                            aria-controls="accordion-flush-body-1">
+                            <span
+                                class="font-rubik font-normal lg:text-[24px] sm:text-[20px] text-[16px] sm:leading-[28.44px] leading-[24px] text-[#010101]">Q3.
+                                Can I
+                                edit my CV after I've saved it?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p
+                                class="text-[#000000] opacity-80 max-w-[786px] text-[16px] leading-[24.69px] font-normal font-rubik">
+                                Absolutely! We
+                                understand that your CV is a dynamic document that may require updates and modifications
+                                over time. Once
+                                you've saved your CV using our CVhawk, you can easily edit and make changes whenever
+                                needed.</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-4">
+                        <button type="button"
+                            class="flex w-full justify-between items-center py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
+                            aria-controls="accordion-flush-body-2">
+                            <span
+                                class="font-rubik font-normal lg:text-[24px] sm:text-[20px] text-[16px] sm:leading-[28.44px] leading-[24px] text-[#010101]">Q4.
+                                Can I
+                                import my existing CV into the builder?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p
+                                class="text-[#000000] opacity-80 max-w-[786px] text-[16px] leading-[24.69px] font-normal font-rubik">
+                                Absolutely! We
+                                understand that your CV is a dynamic document that may require updates and modifications
+                                over time. Once
+                                you've saved your CV using our CVhawk, you can easily edit and make changes whenever
+                                needed.</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-5">
+                        <button type="button"
+                            class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-5" aria-expanded="false"
+                            aria-controls="accordion-flush-body-5">
+                            <span
+                                class="font-rubik font-normal lg:text-[24px] sm:text-[20px] text-[16px] sm:leading-[28.44px] leading-[24px] text-[#010101]">Q5.
+                                Is my
+                                personal information safe and secure?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p
+                                class="text-[#000000] opacity-80 max-w-[786px] text-[16px] leading-[24.69px] font-normal font-rubik">
+                                Absolutely! We
+                                understand that your CV is a dynamic document that may require updates and modifications
+                                over time. Once
+                                you've saved your CV using our CVhawk, you can easily edit and make changes whenever
+                                needed.</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-flush-heading-6">
+                        <button type="button"
+                            class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                            data-accordion-target="#accordion-flush-body-6" aria-expanded="false"
+                            aria-controls="accordion-flush-body-6">
+                            <span
+                                class="font-rubik font-normal lg:text-[24px] sm:text-[20px] text-[16px] sm:leading-[28.44px] leading-[24px] text-[#010101]">Q6.
+                                What
+                                kind of templates are available in the CV builder?</span>
+                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M9 5 5 1 1 5" />
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p
+                                class="text-[#000000] opacity-80 max-w-[786px] text-[16px] leading-[24.69px] font-normal font-rubik">
+                                Absolutely! We
+                                understand that your CV is a dynamic document that may require updates and modifications
+                                over time. Once
+                                you've saved your CV using our CVhawk, you can easily edit and make changes whenever
+                                needed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- succsess starts with here -->
+    <section class="pt-[50px] lg:pt-0">
+        <div class="container max-w-[1140px] px-3 mx-auto">
+            <div
+                class="box-starts bg-[#f36a3e] max-w-[1140px] rounded-[21px] lg:py-[64px] sm:py-[36px] py-[61px] px-[21px] lg:translate-y-[50%] sm:translate-y-[30%] translate-y-[18%] w-full">
+                <h2
+                    class="font-rubik lg:text-[40px] md:text-[30px] text-[28px]  text-[#fafafa] lg:leading-[47.4px] md:leading-[42px] leading-[36.4px] max-w-[669px] mx-auto font-medium text-center">
+                    Your Path to Success Starts Here: Build Your CV Today</h2>
+                <p
+                    class="sm:text-[16px] sm:leading-[24px] text-[14px] leading-[21px] opacity-90 text-[#fafafa] font-normal font-rubik text-center max-w-[615px] mx-auto pt-[16px]">
+                    Our CV builder not only provides a user-friendly interface but also offers valuable guidance along
+                    the way.</p>
+                <div class="text-center pt-[40px]">
+                    <button
+                        class="font-semibold text-[16px] leading-[18.96px] text-[#010101] font-rubik rounded-[41px] max-w=[174px] min-h-[53px] bg-[#FAFAFA] py-[17px] px-[38px]  hover:text-[#FAFAFA]  transition ease-in-out   hover:bg-[#010101]  duration-300 ... text-nowrap">Get
+                        Started</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-[#070707] lg:pt-[208px] sm:pt-[97px] pt-[70px]">
+        <div class="container max-w-[1140px] px-3 mx-auto">
+            <div class="flex flex-row -mx-[12px]  flex-wrap">
+                <div class="lg:w-[41.66%] md:w-[33.33%] px-3 w-full">
+                    <a href=""><img src="./dist/images/png/footer-logo.png" alt="logofooter"></a>
+                    <p
+                        class="font-rubik text-[16px] leading-[24px] font-normal text-[#fafafa] opacity-90 max-w-[373px] md:mb-[35px]">
+                        Sit urna ornare sed quam molestie sit placerat convallis. Ac condimentum mollis malesuada
+                        placerat in placerat id
+                        facilisis.</p>
+                    <div class="lg:gap-[32px] sm:gap-[24px] gap-[20px] md:flex  hidden">
+                        <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out"
+                            href="https://x.com/i/flow/login" target="_blank"><img
+                                src="./dist/images/svg/twiiter-vector.svg" alt="twitter"></a>
+                        <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out"
+                            href="https://www.facebook.com/" target="_blank"><img
+                                src="./dist/images/svg/facebook-vector.svg" alt="facbook"></a>
+                        <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out"
+                            href="https://www.instagram.com/" target="_blank"><img
+                                src="./dist/images/svg/insta-vector.svg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="lg:w-[58.33%] px-3 md:w-[66.66%] w-full">
+                    <div class="flex  flex-row -mx-[12px]  flex-wrap lg:mt-[82px] md:mt-[80px] mt-[30px]">
+                        <div class="lg:w-[33.33%] px-3 md:w-[25%] w-[50%] flex md:justify-center">
+                            <ul>
+                                <li class="pb-[20px] font-medium font-rubik text-[16px] leading-[24px] text-[#fafafa]">
+                                    Quick Links</a></li>
+                                <li class="pb-[20px]"><a
+                                        class="font-rubik font-normal sm:text-[16px] text-[14px] leading-[21px] sm:leading-[24px] text-[#fafafa] opacity-90 hover:text-[#F36A3E]"
+                                        href="#home">Home</a></li>
+                                <li class="pb-[20px]"><a
+                                        class="font-rubik font-normal sm:text-[16px] text-[14px] leading-[21px] sm:leading-[24px] text-[#fafafa] opacity-90 hover:text-[#F36A3E]"
+                                        href="#about">About</a></li>
+                                <li class="pb-[20px]"><a
+                                        class="font-rubik font-normal sm:text-[16px] text-[14px] leading-[21px] sm:leading-[24px] text-[#fafafa] opacity-90 hover:text-[#F36A3E]"
+                                        href="#helpyou">We’ll help you</a></li>
+                                <li><a class="font-rubik font-normal sm:text-[16px] text-[14px] leading-[21px] sm:leading-[24px] text-[#fafafa] opacity-90 hover:text-[#F36A3E]"
+                                        href="#testimonals">Testimonials</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="lg:w-[33.33%] px-3 md:w-[41.66%] w-[50%] flex md:justify-center">
+                            <div class="blank">
+                                <p class="font-medium font-rubik text-[16px] leading-[24px] text-[#fafafa] pb-[20px]">
+                                    Support</p>
+                                <div class="flex gap-[5px] items-center pb-[20px]">
+                                    <a href=""><img src="./dist/images/svg/phone-svg.svg" alt="phone"></a>
+                                    <a class="font-rubik font-normal sm:text-[16px] text-[14px] leading-[21px] sm:leading-[24px] text-[#fafafa] opacity-90 hover:text-[#F36A3E]"
+                                        href="tel:+4733378901">+012 345 67890</a>
+                                </div>
+                                <div class="flex gap-[5px] items-center group">
+                                    <a class="group-hover:-[#F36A3E]" href=""><svg width="15" height="15"
+                                            viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.5 2.5H2.5C1.8125 2.5 1.25625 3.0625 1.25625 3.75L1.25 11.25C1.25 11.9375 1.8125 12.5 2.5 12.5H12.5C13.1875 12.5 13.75 11.9375 13.75 11.25V3.75C13.75 3.0625 13.1875 2.5 12.5 2.5ZM12.5 5L7.5 8.125L2.5 5V3.75L7.5 6.875L12.5 3.75V5Z"
+                                                fill="#fafafa" />
+                                        </svg>
+                                    </a>
+                                    <a class="font-rubik font-normal sm:text-[16px] text-[14px] leading-[21px] sm:leading-[24px] text-[#fafafa] opacity-90 group-   hover:text-[#F36A3E]"
+                                        href="mailto:someone@example.com">Cvhawk@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-[33.33%] px-3 w-[50%] lg:flex md:justify-center">
+                            <ul>
+                                <li
+                                    class="pb-[20px] font-medium font-rubik text-[16px] leading-[24px] text-[#fafafa] hover:text-[#F36A3E]">
+                                    Legal</li>
+                                <li class="pb-[20px]"><a
+                                        class="font-rubik font-normal sm:text-[16px] text-[14px] leading-[21px] sm:leading-[24px] text-[#fafafa] opacity-90 hover:text-[#F36A3E]"
+                                        href="">Privacy Policy</a></li>
+                                <li><a class="font-rubik font-normal sm:text-[16px] text-[14px] leading-[21px] sm:leading-[24px] text-[#fafafa] opacity-90 hover:text-[#F36A3E]"
+                                        href="">Terms & conditions</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:gap-[32px] sm:gap-[24px] gap-[20px] md:hidden flex mt-[40px]">
+                    <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out" href=""><img
+                            src="./dist/images/svg/twiiter-vector.svg" alt="twitter"></a>
+                    <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out" href=""><img
+                            src="./dist/images/svg/facebook-vector.svg" alt="facbook"></a>
+                    <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out" href=""><img
+                            src="./dist/images/svg/insta-vector.svg" alt="insta"></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-b border-[#fafafa] opacity-20 lg:mt-[69px] sm:mt-[50px] mt-[30px]"></div>
+        <div class="flex justify-center sm:py-[20px] py-[14px]">
+            <p class="font-rubik font-medium text-[16px] leading-[24px] text-[#fafafa] opacity-90">Copyright@CVhawk2023
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <script src="./dist/js/script.js"></script>
+</body>
+
+</html>
