@@ -24,7 +24,7 @@
                 <div class="flex justify-between items-center w-full">
                     <a href=""><img src="./dist/images/png/nav-logo.png" alt="nav-logo"></a>
                     <div class="flex max-lg:justify-center  items-center flex-col gap-8 max-sm:gap-5 justify-center max-lg:w-full max-lg:right-[-100%] top-0 max-lg:h-screen max-lg:top-0 duration-500
-                                                        max-lg:fixed menulist max-lg:bg-white overflow-hidden z-20"
+                                                        max-lg:fixed menulist max-lg:bg-white overflowhidden z-20"
                         id="navbar">
                         <ul class="flex justify-center flex-col gap-8 max-sm:gap-5 items-center ps-0 lg:flex-row">
                             <li><a class="block lg:hidden" href=""><img src="./dist/images/png/nav-logo.png"
@@ -109,9 +109,8 @@
                     <button
                         class="font-semibold text-[16px] leading-[18.96px] text-[#FAFAFA] font-rubik rounded-[41px] max-w-[168px] min-h-[53px] bg-[#F36A3E] py-[17px] px-[38px] outline hover:text-[#F36A3E]  transition ease-in-out   hover:bg-[#FAFAFA]  duration-300 ... text-nowrap">Get
                         in Touch</button>
-                    <button
-                        class="font-semibold text-[16px] leading-[18.96px] text-[#F36A3E] font-rubik rounded-[41px] max-w=[174px] min-h-[53px] bg-[#FAFAFA] py-[17px] px-[38px] outline hover:text-[#FAFAFA]  transition ease-in-out   hover:bg-[#F36A3E]  duration-300 ... text-nowrap">Watch
-                        Demo</button>
+                        <button
+                            class="font-semibold text-[16px] leading-[18.96px] text-[#FAFAFA] font-rubik rounded-[41px] max-w-[168px] min-h-[53px] bg-[#F36A3E] py-[17px] px-[38px] outline hover:text-[#F36A3E]  transition ease-in-out   hover:bg-[#FAFAFA]  duration-300 ... text-nowrap">Watch Demo</button>
                 </div>
                 <div class="hero-slider md:hidden pt-[35px] ">
                     <div class="blank">
@@ -231,6 +230,7 @@
                         industry.</p>
                 </div>
             </div>
+            </div>
     </section>
     <!-- section-your-stantout -cv -->
     <section class="bg-[#f9f9f9] relative lg:py-[80px] sm:py-[65px] py-[40px]">
@@ -335,7 +335,7 @@
                             <p
                                 class="text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] font-normal font-rubik text-[#000000] opacity-90 lg:max-w-[556px] md:max-w-[403px] max-w-[349px]">
                                 Professional sections like<span class="text-[#000000] font-semibold"> Experience,
-                                    Skills, Summary</span class="text-[#000000] font-semibold"> and <span
+                                    Skills, Summary</span> and <span
                                     class="text-[#000000] font-semibold">Education</span></p>
                         </div>
                         <div class="flex items-center gap-[9px] pb-[16px]">
@@ -343,7 +343,7 @@
                             <p
                                 class="text-[14px] leading-[21px] md:text-[16px] md:leading-[24px] font-normal font-rubik text-[#000000] opacity-90 lg:max-w-[556px] md:max-w-[352px] max-w-[319px] lg:text-nowrap">
                                 Professional sections like <span class="text-[#000000] font-semibold">Strengths, Quotes,
-                                    Books, Interests</span class="text-[#000000] font-semibold"> and <span
+                                    Books, Interests</span> and <span
                                     class="text-[#000000] font-semibold">My Time</span></p>
                         </div>
                         <div class="flex items-center gap-[9px] md:pb-[40px]">
@@ -363,7 +363,7 @@
                     <div class="blank">
                         <img src="./dist/images/png/skills-image.png" alt="skills"
                             class="w-full max-w-[509px] z-10 relative">
-                        <div class="md:hidden block pt-[33px]">
+                        <div class="md:hidden  pt-[33px] flex  sm:justify-center items-center ">
                             <button
                                 class="font-semibold text-[16px] leading-[18.96px] text-[#FAFAFA] font-rubik rounded-[41px] max-w-[168px] min-h-[53px] bg-[#F36A3E] py-[17px] px-[38px] outline hover:text-[#F36A3E]  transition ease-in-out   hover:bg-[#FAFAFA]  duration-300 ... text-nowrap">Get
                                 Started</button>
@@ -972,7 +972,7 @@
                         <div class="lg:w-[33.33%] px-3 md:w-[25%] w-[50%] flex md:justify-center">
                             <ul>
                                 <li class="pb-[20px] font-medium font-rubik text-[16px] leading-[24px] text-[#fafafa]">
-                                    Quick Links</a></li>
+                                    Quick Links</li>
                                 <li class="pb-[20px]"><a
                                         class="font-rubik font-normal sm:text-[16px] text-[14px] leading-[21px] sm:leading-[24px] text-[#fafafa] opacity-90 hover:text-[#F36A3E]"
                                         href="#home">Home</a></li>
@@ -1020,18 +1020,19 @@
                                 <li><a class="font-rubik font-normal sm:text-[16px] text-[14px] leading-[21px] sm:leading-[24px] text-[#fafafa] opacity-90 hover:text-[#F36A3E]"
                                         href="">Terms & conditions</a></li>
                             </ul>
+                            <div class="lg:gap-[32px] sm:gap-[24px] gap-[20px] md:hidden flex mt-[40px]">
+                                <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out" href=""><img
+                                        src="./dist/images/svg/twiiter-vector.svg" alt="twitter"></a>
+                                <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out" href=""><img
+                                        src="./dist/images/svg/facebook-vector.svg" alt="facbook"></a>
+                                <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out" href=""><img
+                                        src="./dist/images/svg/insta-vector.svg" alt="insta"></a>
+                            </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="lg:gap-[32px] sm:gap-[24px] gap-[20px] md:hidden flex mt-[40px]">
-                    <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out" href=""><img
-                            src="./dist/images/svg/twiiter-vector.svg" alt="twitter"></a>
-                    <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out" href=""><img
-                            src="./dist/images/svg/facebook-vector.svg" alt="facbook"></a>
-                    <a class="hover:translate-y-[-4px] transition duration-150 ease-in-out" href=""><img
-                            src="./dist/images/svg/insta-vector.svg" alt="insta"></a>
-                </div>
+                
             </div>
         </div>
         <div class="border-b border-[#fafafa] opacity-20 lg:mt-[69px] sm:mt-[50px] mt-[30px]"></div>
