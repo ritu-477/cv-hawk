@@ -162,3 +162,12 @@
     background: #f36a3e;
     width: 40px;
 }
+/* @media (min-width: 1536px) {
+    .nextBtn{
+        right: 200px;
+    }
+    .preBtn{
+        left: 200px;
+    }
+    
+} */
